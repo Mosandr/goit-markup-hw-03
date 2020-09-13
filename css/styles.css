@@ -1,0 +1,210 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --title-dark-theme-color: #ffffff;
+  --title-dark-theme-color-alpha: rgba(255, 255, 255, 0.6);
+  --title-light-theme-color: #212121;
+  --description-color: #757575;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+/* =============== COMPONENTS ===================== */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+/* =============== END COMPONENTS ===================== */
+
+/* =============== HEADER ===================== */
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo-dark-theme {
+  color: var(--title-dark-theme-color);
+}
+
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--title-light-theme-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+.header-mail-link,
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+}
+/* =============== END HEADER ===================== */
+
+/* =============== HERO ===================== */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-dark-theme-color);
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--title-dark-theme-color);
+}
+/* =============== END HERO ===================== */
+
+/* =============== FEATURES ===================== */
+.features-list-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-light-theme-color);
+}
+
+.features-list-item-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+/* =============== END FEATURES ===================== */
+
+/* =============== SERVICES ===================== */
+
+/* =============== END SERVICES ===================== */
+
+/* =============== TEAM ===================== */
+.team-list-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.team-list-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+
+/* =============== END TEAM ===================== */
+
+/* =============== FOOTER ===================== */
+.footer {
+  background: #2f303a;
+}
+
+.adress-list-map,
+.adress-list-mail,
+.adress-list-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--title-dark-theme-color);
+}
+.adress-list-mail,
+.adress-list-tel {
+  color: var(--title-dark-theme-color-alpha);
+}
+
+/* =============== END FOOTER ===================== */
+
+/* =========================== PORTFOLIO PAGE ===================== */
+
+/* ==========================FILTER======================== */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--title-dark-theme-color);
+}
+/* ========================== END FILTER======================== */
+
+/* =============== PORTFOLIO PROJECTS ===================== */
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-light-theme-color);
+}
+
+.project-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+/* =============== END PORTFOLIO PROJECTS ===================== */
+
+.current {
+  color: var(--accent-color);
+}
