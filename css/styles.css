@@ -6,12 +6,13 @@
   --title-light-theme-color: #212121;
   --description-color: #757575;
   --accent-color: #2196f3;
+  --card-bg: #ffffff;
+  --ligth-bg: #f5f4fa;
 }
 
 body {
   font-family: var(--main-font);
   font-style: normal;
-  width: 1600px;
 }
 
 .list {
@@ -40,12 +41,11 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 /* =============== END COMPONENTS ===================== */
@@ -129,17 +129,13 @@ body {
 /* =============== HERO ===================== */
 .hero {
   background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 300px;
+  padding: 200px 250px;
 }
 
 .hero-title {
@@ -175,7 +171,22 @@ body {
 /* =============== FEATURES ===================== */
 .features-title {
   display: none;
+  justify-content: space-between;
 }
+
+.features-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-list-item {
+  width: calc((100%-90px) / 4);
+  align-items: flex-start;
+}
+.features-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .features-list-item-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -203,9 +214,46 @@ body {
   margin-bottom: 50px;
 }
 
+.services-list {
+  display: flex;
+}
+
+.sercvices .container {
+  padding-bottom: 94px;
+}
+.services-list-item {
+  width: calc((100%-60px) / 3);
+}
+
+.services-list-item:not(:first-child) {
+  margin-left: 30px;
+}
 /* =============== END SERVICES ===================== */
 
 /* =============== TEAM ===================== */
+
+.team {
+  background: var(--ligth-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+}
+
+.team-list-item {
+  background: var(--card-bg);
+  width: calc((100%-90px) / 4);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -241,6 +289,8 @@ body {
 /* =============== FOOTER ===================== */
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .adress-list-map,
