@@ -14,11 +14,15 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .address {
@@ -34,6 +38,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
 }
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
 /* =============== END COMPONENTS ===================== */
 
 /* =============== HEADER ===================== */
@@ -54,8 +68,26 @@ body {
 .logo-dark-theme {
   color: var(--title-dark-theme-color);
 }
+.header > .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  margin-left: 93px;
+  margin-right: auto;
+}
+
+.navigation-list-item:not(:first-child) {
+  margin-left: 50px;
+}
 
 .navigation-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -71,8 +103,19 @@ body {
 .header-tel-link:focus {
   color: var(--accent-color);
 }
+.address-list {
+  display: flex;
+}
+
+.address-list-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-mail-link,
 .header-tel-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -87,6 +130,10 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -102,11 +149,22 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
+
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-style: none;
+  text-align: center;
+  background: var(--accent-color);
 }
 /* =============== END HERO ===================== */
 
 /* =============== FEATURES ===================== */
+.features-title {
+  display: none;
+}
 .features-list-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -116,6 +174,7 @@ body {
 }
 
 .features-list-item-description {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -125,11 +184,25 @@ body {
 /* =============== END FEATURES ===================== */
 
 /* =============== SERVICES ===================== */
+.services-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 
 /* =============== END SERVICES ===================== */
 
 /* =============== TEAM ===================== */
+.team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.team-list-img {
+  margin-bottom: 30px;
+}
 .team-list-subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -139,6 +212,8 @@ body {
 }
 
 .team-list-item-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
@@ -157,6 +232,7 @@ body {
 .adress-list-map,
 .adress-list-mail,
 .adress-list-tel {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -168,12 +244,29 @@ body {
   color: var(--title-dark-theme-color-alpha);
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.adress-list-map,
+.adress-list-mail {
+  margin-bottom: 10px;
+}
+
 /* =============== END FOOTER ===================== */
 
 /* =========================== PORTFOLIO PAGE ===================== */
+.portfolio-title {
+  display: none;
+}
 
 /* ==========================FILTER======================== */
 .filter-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-style: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -184,11 +277,17 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--title-dark-theme-color);
+  background: var(--accent-color);
 }
 /* ========================== END FILTER======================== */
 
 /* =============== PORTFOLIO PROJECTS ===================== */
+.project-img {
+  margin-bottom: 20px;
+}
 .project-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -197,6 +296,8 @@ body {
 }
 
 .project-subtitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
