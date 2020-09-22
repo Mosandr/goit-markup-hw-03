@@ -325,6 +325,11 @@ body {
   display: none;
 }
 
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ==========================FILTER======================== */
 .filter-btn {
   padding: 6px 22px;
@@ -338,6 +343,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
 }
+.filter-buttons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-buttons-list > li:not(:first-child) {
+  margin-left: 8px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--title-dark-theme-color);
@@ -349,9 +365,31 @@ body {
 .project-img {
   margin-bottom: 20px;
 }
+.projects-list {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.projects-list-item {
+  width: 370px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.projects-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .project-title {
   margin-top: 0;
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -362,6 +400,9 @@ body {
 .project-subtitle {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
